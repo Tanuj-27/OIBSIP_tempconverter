@@ -1,0 +1,106 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+body{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: beige;
+    font-size: 1rem;
+}
+.temperature-converter{
+    background-color: burlywood;
+    width: 100%;
+    min-width: 320px;
+    padding: 20px 25px 45px;
+    border-radius: 10px;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    box-shadow: -5px -5px 250px 0 ;
+    backdrop-filter: blur(10px);
+}
+.mobile{
+    display: flex;
+    justify-content: space-around;
+    font-size: 18px;
+    font-weight: 700;
+    align-items: center;
+    margin-bottom: 40px;
+}
+.title{
+    color: #222;
+    font-size: 1.5rem;
+    text-align: center;
+}
+.result{
+    text-align: center;
+    margin: 20px 0;
+}
+.result-heading{
+    color: #555;
+    font-size: 1rem;
+    font-weight: 600;
+}
+.celsius-value{
+    border-bottom: 2px solid #ccc;
+    padding: 10px;
+    transition: all .45s ease;
+}
+.degree-type{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 0;
+}
+.degree-field{
+    display: flex;
+    flex-direction: column;
+    width: 45%;
+}
+label{
+    color: black;
+    font-size: .8rem;
+    margin-bottom: 5px;
+}
+input, select{
+    color:black;
+    background: gainsboro ;
+    border: none;
+    outline: none;
+    border-bottom: 2px solid #ccc;
+    padding: 8px;
+    margin-bottom: 15px;
+    height: 35px;
+}
+
+input:focus{
+    border: 1px solid purple;
+}
+#convert-btn{
+    border: none;
+    outline: none;
+    border-radius: 5px;
+    background: black;
+    color: peachpuff;
+    padding: 12px 80px;
+    font-weight: bold;
+    letter-spacing: 1px;
+    margin-top: 1px;
+    transition: all .3s ease-in;
+    text-transform: uppercase;
+    cursor: pointer;
+}
+#convert-btn:hover{
+    background: linear-gradient(to bottom, rgb(173, 216, 230), black);
+}
+.fa{
+    margin-left: -12px;
+    margin-right: 8px;
+    
+}
